@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     void FixedUpdate()
     {
         altitude = CheckIfFalling() ? altitude - 9.87f / 50f : 0;
-        Debug.Log(altitude);
+        //Debug.Log(altitude);
         Move(horizontal, vertical, altitude);
     }
 
